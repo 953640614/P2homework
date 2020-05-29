@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//1、已知总天数为50天，求共有几周，并剩余几天。
+			var week, day, days = 50;
+			week = parseInt(days / 7);
+			day　= parseInt(days % 7);
+			
+			console.log("共" +　week　+　"周");
+			console.log("剩余" +　day　+　"天");
+			
+			//2、不借助临时变量，进行两个整数的交换，例： a = 2, b = 8   输出 a = 8,    b =2
+			var a = 2, b = 8;
+			a = b + a;
+			b = a - b;
+			a = a - b;
+			console.log("现在的a:" + a);
+			console.log("现在的b:" + b);
+			
+		</script>
+	</body>
+</html>

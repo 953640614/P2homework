@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<pre>
+		1.gitee 新建仓库
+			
+		2.gitee 上传文件
+			01  hbuilder里创建一个新的目录class01，在目录里新建文件，在此处右键打开Git Bash Here
+			02 git clone [url 这里是你仓库的地址]  克隆完成后会生成一个名字为仓库名的文件夹 要是克隆过就不用，看有没有生成的文件
+			03 cd 仓库这个文件的名字
+			04 ls 查看文件
+			05 git remote -v 查看远程仓库的版本 信息 （这里要看文件的前缀是gitee 还是origin）若是origin
+			  06 git remote rm origin 删除名字为origin的远程仓库
+			  07 git remote add gitee [url](仓库的地址) 添加名字为gitee的远程仓库
+			  补：这里要去工作区新建项目和项目文件 （一般名字为自己的）
+			08 git status 查看状态 （这里若是有一个红色文件夹 说明你增加了一个新的文件）
+			09 git add * 提交文件   * 代表提交所有文件包括删除和改动的  是将要提交的文件提交到版本库/暂存区
+			10 git status 再次查看状态 （这里若是有一个绿色文件夹名字   这里代表文件提交到index暂存区了）
+			11 git commit -m "提交的注释" 这个命令是从缓存区提交到本地 版本库    -m 是注释的意思 "这里是注释的内容"
+			12 git remote -v 查看远程仓库的版本 信息 （这里要看文件的前缀是gitee 还是origin）若是origin
+			13 (这里)
+				git pull  把最新的内容拉取下来
+			14 git push gitee master
+			或    git push origin master  这里是从本地库提交到远程仓库 文件
+			
+ 		</pre>
+	</body>
+</html>
